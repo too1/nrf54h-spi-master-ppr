@@ -9,14 +9,11 @@
 #include <zephyr/logging/log.h>
 LOG_MODULE_REGISTER(app);
 
-
 int main(void)
 {
-	int cnt = 0;
+	printk("SPI sample started (%s)\n", CONFIG_BOARD);
 
 	while (1) {
-		LOG_INF("test %d", cnt++);
-		printk("Hello world from %s\n", CONFIG_BOARD);
 		k_msleep(1000);
 	}
 
