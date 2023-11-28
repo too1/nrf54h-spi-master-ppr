@@ -12,6 +12,6 @@ ExternalZephyrProject_Add(
   )
 
 # Add a dependency so that the remote sample will be built and flashed first
-add_dependencies(nrf54_spi_ppr_test remote)
+add_dependencies(nrf54h-spi-master-ppr remote)
 # Place remote image first in the image list
 set(IMAGES "remote" ${IMAGES})
